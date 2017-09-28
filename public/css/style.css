@@ -1,0 +1,72 @@
+html, body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+	font-family:"Trebuchet MS", Helvetica, sans-serif
+	font-size: 20px;
+
+}
+nav.navbar {
+	padding: 0 5rem;
+	border-radius: 0px;
+	border: none;
+	background: #222222;
+}
+
+#menu-header{
+	float: right;
+}
+
+#menu-header li a {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #e4e4e4;
+	transition: 200ms ease-in-out all;
+}
+#menu-header li.active a {
+	font-weight: 700;
+	color: #f7f7f7;
+	background: none;
+}
+
+/* HERO */
+#hero {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/hero.jpg');
+	margin-top: -101px;
+}
+/* underline transition */
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #f7f7f7;
+}
+
+div.footer{
+	background: rgba(0,0,0,0);	
+}
+div.navbar.navbar-static.bottom{
+	margin: 0;
+	background-image: url('');
+}
+div.col-xs-12{
+	padding: 0;
+}
+div.navbar.navbar-static.bottom p img{
+}
