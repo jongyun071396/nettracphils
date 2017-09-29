@@ -33,6 +33,7 @@ nav.navbar {
 /* HERO */
 #hero {
 	height: 100vh;
+
 	background-size: cover;
 	background-position: center;
 	background-image: url('../img/hero.jpg');
@@ -94,4 +95,45 @@ footer div ul li a{
 }
 span.email{
 	color:blue;
+}
+#home_content{
+	padding:30px;
+}
+.services{
+		border:1px solid #eee;
+		height: 650px;
+		padding:10px;
+		border-radius: 5px;
+		box-shadow: 2px 2px 5px #BEBEBE;
+	}
+	.title{
+		font-size: 20px;
+		color:#006495;
+		font-weight: bold;
+	}
+	.servicestitle{
+		color:#128CDF;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.label-important{
+		
+		background-color: #E0A025;
+		color:white;
+		padding:2px;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+.definition{
+	padding:5px;
+	color:rgb(51, 51, 51);
+}
+.hero-content{
+	padding-top:300px;
+}
+.item{
+	color:white;
+	font-size: 50px;
+	font-weight: bold!important;
+	text-align: center;
 }
