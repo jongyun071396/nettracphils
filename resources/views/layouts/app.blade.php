@@ -11,7 +11,8 @@
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
 @yield('custom-css')
-
+@yield('map')
+@yield('footer')
 </head>		
 <body>
 	{{-- header --}}
@@ -36,24 +37,29 @@
 	</nav>
 
 	@yield('body')
+	<footer class="fixed-bottom">
+	<div class="container">
+	<div class="solid-border"></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="footer">
 
-		<div class="container">
-			<div class="footer">
-				<div></div>
-			    <div class="navbar navbar-static bottom">
-			   		<div class="col-sm-1"><p><img id="footer-logo" src="../img/footer.png"></p></div>
-			   		<div class="col-sm-3">© 2017 NetTrac Philippines Inc. <br>A Canadian company serving the world.</p></div>
-					<div class="col-sm-7">
-						<ul class="nav navbar-nav" id="menu-footer">
+					<div class="pull-left">
+						<a href="{{ url('/') }}"><img id="footer-logo" src="../img/footer.png"></a>
+						<span id="footer-nci">© 2017 NetTrac Philippines Inc. A Canadian company serving the world.</span>
+					</div>
+					<div class="pull-right">
+						<ul class="nav navbar-nav pull-right" id="menu-footer">
 							<li class="{{ request()->segment(1) == 'privacy' ? 'active' : '' }}"><a href="{{ url('privacy') }}">Privacy</a></li>
 							<li class="{{ request()->segment(1) == 'terms-of-service' ? 'active' : '' }}"><a href="{{ url('terms-of-service') }}">Terms of Service</a></li>
 							<li class="{{ request()->segment(1) == 'employment' ? 'active' : '' }}"><a href="{{ url('employment') }}">Employement</a></li>
-							<li class="{{ request()->segment(1) == 'company-profile' ? 'active' : '' }}"><a href="{{ url('company-profile') }}">Company Profile</a></li>
 							<li class="{{ request()->segment(1) == 'site-map' ? 'active' : '' }}"><a href="{{ url('site-map') }}">Site Map</a></li>
 						</ul>
-					</div>	
-				</div>	
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>		
+	</footer>	
 </body>
 </html>

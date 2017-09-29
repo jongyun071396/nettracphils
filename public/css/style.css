@@ -58,8 +58,10 @@ nav.navbar {
 	background: #f7f7f7;
 }
 
-div.footer{
-	background: rgba(0,0,0,0);	
+.footer{
+	background: rgba(0,0,0,0);
+	height: 90px;
+	padding: 20px 0;
 }
 div.navbar.navbar-static.bottom{
 	margin: 0;
@@ -69,4 +71,27 @@ div.col-xs-12{
 	padding: 0;
 }
 div.navbar.navbar-static.bottom p img{
+}
+#footer-nci {
+	padding-left: 11px;
+	font-size: 11px;
+}
+#footer-logo {
+	padding: 15px 0;
+}
+.solid-border{
+	border: .5px solid;
+	opacity:.5;
+}
+#ext{
+	margin-left: -20px;
+	width: 300px;
+}
+footer div ul li a{
+	color:black;
+	font-size: 12px;
+
+}
+span.email{
+	color:blue;
 }

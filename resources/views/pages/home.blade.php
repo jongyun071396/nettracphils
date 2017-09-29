@@ -3,7 +3,7 @@
 @section('custom-css')
 <style>
 	nav.navbar {
-		background: rgba(0, 0, 0, 0.57);
+		background: rgba(0, 0, 0, 0.3);
 	}
 </style>
 @endsection

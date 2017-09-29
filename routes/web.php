@@ -17,3 +17,11 @@ Route::get('support', 'PagesController');
 Route::get('contact-us', 'PagesController');
 Route::get('payroll', 'PagesController');
 Route::get('control-panel', 'PagesController');
+
+Route::get('privacy', 'PagesController');
+Route::get('terms-of-service', 'PagesController');
+Route::get('employment', 'PagesController');
+Route::get('site-map', 'PagesController');
+
+
+
