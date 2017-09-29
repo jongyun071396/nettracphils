@@ -132,4 +132,25 @@
         </div>
     </div>
 </div>
+<div class="container" style="padding:5px">
+	<div class="row">
+		<div class="col-md-12" style="text-align: center;">
+			<h4>Providing the tools you need:</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<table>
+				<tr>
+					<td class="icons"><i class="fa fa-wordpress fa-4x" aria-hidden="true"></i>
+					</td>
+					<td class="icons"><i class="fa fa-drupal fa-4x" aria-hidden="true"></i>
+					</td>
+					<td class="icons"><i class="fa fa-joomla fa-4x" aria-hidden="true"></i>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
 @stop

@@ -137,3 +137,9 @@ span.email{
 	font-weight: bold!important;
 	text-align: center;
 }
+.icons{
+	padding:10px;
+}
+.icons:hover{
+	color:#aaa;
+}
