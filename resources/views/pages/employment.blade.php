@@ -2,7 +2,7 @@
 @section('body')
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-md-12">
 				<h2>NetTrac Communications Inc. - Job Opportunities</h2>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 					Please respond by emailing your resume in MSWORD.DOC format only to: <span class="email">employment1@nettrac.net </span>
 				</p>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-md-6">
 				<p>
 					<b>PHP Web Application Developers (South East Asia Office):</b><br>
 					Due to increasing work volumes, we are looking for a team member to join our custom development group. In our Cebu office, you will be working with staff in Canada to meet customer needs. 

@@ -2,7 +2,7 @@
 @section('footer')
 	<style>
 		footer {
-		    position: fixed;
+
 		    height: 100px;
 		    bottom: 0;
 		    width: 100%;
@@ -10,7 +10,7 @@
 	</style>
 @endsection
 @section('body')
-	<div class="container">
+	<div class="container" id="privacy-pad">
 		<div class="row">
 			<div class="col-xs-12">
 				<h1>NetTrac Communications Inc. - Privacy Statement</h1>

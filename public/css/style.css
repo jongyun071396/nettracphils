@@ -95,3 +95,76 @@ footer div ul li a{
 span.email{
 	color:blue;
 }
+form#container-form{
+	border:1px solid rgba(128, 128, 128, 0.47);;
+	border-radius: 5px;
+	padding:10px;
+}
+div.col-sm-10{
+	width:250px;
+	margin-left: 0px;
+}
+button.btn.btn-success{
+	width: 100px;
+}
+div.form-group{
+	padding-left: 50px;
+}
+h3.paddingtitleform{
+	padding-left: 20px;
+}
+div.form-group.text-center{
+	padding:0px;
+}
+#payroll-container{
+	margin-top: 100px;
+	width: 550px;
+	height: 401px;
+}
+div.form-group.pr{
+	padding-left: 0px;
+}
+div.form-group.prr{
+	padding-left: 60px;
+}
+#payroll-reg-container{
+	margin-top: 50px;
+	width: 700px;
+	height: 725px;
+}
+#contact-us-margin{
+	padding-bottom: 26px;
+}
+#support-margin{
+	padding-bottom: 88px;
+}
+#privacy-pad{
+	padding-bottom: 52px;
+}
+#dropdown{
+	height: 34px;
+	width: 220px;
+	border-radius: 3px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+}
+#dropdown:focus{
+	box-shadow: 0 0 2px rgba(103, 169, 226, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(103, 169, 226, 1);
+}
+#control-panel-container{
+	margin-top: 100px;
+	width: 550px;
+	height: 401px;
+}
+hr{
+	border: .5px solid #c7c7c7;
+	margin: 3px 15px 20px 15px;
+}

@@ -2,7 +2,7 @@
 @section('footer')
 	<style>
 		footer {
-		    position: fixed;
+
 		    height: 100px;
 		    bottom: 0;
 		    width: 100%;
@@ -12,7 +12,7 @@
 @section('body')
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12" id="support-margin">
 				<h2>NetTrac Communications Inc. - Support</h2><br>
 				<ul style="list-style: none">
 					<li>

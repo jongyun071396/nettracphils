@@ -23,5 +23,5 @@ Route::get('terms-of-service', 'PagesController');
 Route::get('employment', 'PagesController');
 Route::get('site-map', 'PagesController');
 
-
+Route::get('payroll-register', 'PagesController');
 
