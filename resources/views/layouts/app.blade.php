@@ -25,7 +25,7 @@
 				<a href="{{ url('/') }}" class="navbar-brand"><img src="{{ url('img/logo.png') }}"></a>
 			</div>
 			{{-- menu items --}}
-			<div>
+			<div class="visible-md visible-lg">
 				<ul class="nav navbar-nav" id="menu-header">
 					<li class="{{ request()->segment(1) == '' ? 'active' : '' }}"><a href="{{ url('/') }}" class="sliding-middle-out">Home</a></li>
 					<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }}"><a href="{{ url('about') }}" class="sliding-middle-out">About Us</a></li>
@@ -35,6 +35,22 @@
 					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 				</ul>
 			</div>
+
+			<div class="visible-sm visible-xs">
+				<ul class="nav navbar-nav navbar-right" style="float:right;background-color: none!important">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;font-weight: bold;">MENU <b class="caret"></b></a>
+			          <ul class="dropdown-menu" id="header-menu">
+			            <li class="{{ request()->segment(1) == '' ? 'active' : '' }}"><a href="{{ url('/') }}" class="sliding-middle-out">Home</a></li>
+					<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }}"><a href="{{ url('about') }}" class="sliding-middle-out">About Us</a></li>
+					<li class="{{ request()->segment(1) == 'support' ? 'active' : '' }}"><a href="{{ url('support') }}" class="sliding-middle-out">Support</a></li>
+					<li class="{{ request()->segment(1) == 'contact-us' ? 'active' : '' }}"><a href="{{ url('contact-us') }}" class="sliding-middle-out">Contact Us</a></li>
+					<li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }}"><a href="{{ url('payroll') }}" class="sliding-middle-out">Payroll System</a></li>
+					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
+			          </ul>
+			        </li>
+      			</ul>
+			</div>
 		</div>
 	</nav>
 
@@ -43,7 +59,7 @@
 	<div class="container">
 	<div class="solid-border"></div>
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="visible-md visible-lg">
 				<div class="footer">
 
 					<div class="pull-left">
@@ -59,6 +75,9 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="visible-sm visible-xs">
+
 			</div>
 		</div>
 	</div>		
