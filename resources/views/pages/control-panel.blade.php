@@ -9,14 +9,16 @@
 				<hr>
 				<div class="form-group pr">
 					<label class="control-label col-sm-4" for="cp-name">Username:</label>
-					<div class="col-sm-10">
-						<input type="text" class="form-control"	 placeholder="Username" name="cp-username">
+			<div class="col-sm-10 input-group">
+					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+						<input type="text" class="form-control"	 placeholder="" name="username">
 					</div>
 				</div>
 				<div class="form-group pr">
 					<label class="control-label col-sm-4" for="cp-passwrd">Password:</label>
-					<div class="col-sm-10">          
-						<input type="password" class="form-control" placeholder="Password" name="cp-password">
+					<div class="col-sm-10 input-group">
+						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>
+						<input type="text" class="form-control"	 placeholder="" name="username">
 					</div>
 				</div>
 				<div class="form-group text-center">
