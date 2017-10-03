@@ -9,6 +9,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {{-- GOOGLE FONTS --}}
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+{{-- FONT AWESOME --}}
+<link rel="stylesheet" type="text/css" href="{{ url('fa/css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
 @yield('custom-css')
 @yield('map')
