@@ -1,4 +1,5 @@
 @extends('layouts.app') @section('custom-css')
+
 <style>
     nav.navbar {
         background: rgba(0, 0, 0, 0.3);
