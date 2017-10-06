@@ -36,7 +36,7 @@
 					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 				</ul>
 			</div>
-<<<<<<< HEAD
+
 			<div class="visible-sm visible-xs" >
 				<div class="navbar-header" style="padding:0px!important">	
 					<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
@@ -46,18 +46,16 @@
 				<div id="mySidenav" class="sidenav">
 					<ul style="list-style-type: none;">
 							<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-							<li class="{{ request()->segment(1) == '' ? 'active' : '' }} menu-list"><a href="{{ url('/') }}" class="sliding-middle-out">Home</a></li>
-							<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }} menu-list"><a href="{{ url('about') }}" class="sliding-middle-out">About Us</a></li>
-							<li class="{{ request()->segment(1) == 'support' ? 'active' : '' }} menu-list"><a href="{{ url('support') }}" class="sliding-middle-out">Support</a></li>
-							<li class="{{ request()->segment(1) == 'contact-us' ? 'active' : '' }} menu-list"><a href="{{ url('contact-us') }}" class="sliding-middle-out">Contact Us</a></li>
-							<li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }} menu-list"><a href="{{ url('payroll') }}" class="sliding-middle-out">Payroll System</a></li>
-							<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }} menu-list"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
+							<li class="{{ request()->segment(1) == '' ? 'active' : '' }} menu-list"><a href="{{ url('/') }}" >Home</a></li>
+							<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }} menu-list"><a href="{{ url('about') }}" >About Us</a></li>
+							<li class="{{ request()->segment(1) == 'support' ? 'active' : '' }} menu-list"><a href="{{ url('support') }}" >Support</a></li>
+							<li class="{{ request()->segment(1) == 'contact-us' ? 'active' : '' }} menu-list"><a href="{{ url('contact-us') }}" >Contact Us</a></li>
+							<li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }} menu-list"><a href="{{ url('payroll') }}" >Payroll System</a></li>
+							<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }} menu-list"><a href="{{ url('control-panel') }}">Control Panel</a></li>	
 					</ul>
-=======
+
 			{{-- resposive --}}
-				<div class="visible-sm visible-xs">
->>>>>>> 0fe7b5a67fd8b39842587ebd88e8d26b69a0b987
-				</div>
+
 			{{-- end responsive --}}
 		</div>
 	</nav>
