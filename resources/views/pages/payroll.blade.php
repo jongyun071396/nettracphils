@@ -30,12 +30,15 @@
 						<input type="password" class="form-control" placeholder="" name="pr-password">
 					</div>
 				</div>
-				<div class="form-group text-center">
-					<a href="#">forget password?</a> | 
-					<a href="{{url('payroll-register')}}">Sign up</a>
+				<div class="form-group pr">
+					<div class="col-sm-offset-4 col-sm-8 fp">          
+						<a href="#">forget password?</a> | <a href="{{url('payroll-register')}}">Sign up</a>
+					</div>
 				</div>
-				<div class="form-group text-center">        
-					<button type="submit" class="btn btn-success">Login</button>
+				<div class="form-group pr">
+					<div class="col-sm-offset-4 col-sm-8">          
+						<button type="submit" class="btn btn-primary">Login</button>
+					</div>
 				</div>
 			</form>
 		</div>

@@ -26,6 +26,24 @@
 				<h3 class="paddingtitleform">Payroll System Registration:</h3>
 				<hr>
 					<div class="form-group prr">
+						<label class="control-label col-sm-4" for="name">Username:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control"	 placeholder="Firstname" name="fname">
+						</div>
+					</div>
+					<div class="form-group prr">
+						<label class="control-label col-sm-4" for="password">Password:</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control"	 placeholder="Password" name="password">
+						</div>
+					</div>
+					<div class="form-group prr">
+						<label class="control-label col-sm-4" for="cpwd">Confirmed-Password:</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control"	 placeholder="Confirmed-Password" name="cpwd">
+						</div>
+					</div>
+					<div class="form-group prr">
 						<label class="control-label col-sm-4" for="name">Firstname:</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control"	 placeholder="Firstname" name="fname">
@@ -98,8 +116,8 @@
 							</label>
 						</div>
 					</div>
-					<div class="form-group text-center">        
-						<button type="submit" class="btn btn-success">Register</button>
+					<div class="form-group text-center r">        
+						<button type="submit" class="btn btn-primary r">Register</button>
 					</div>
 				</form>
 			</div>

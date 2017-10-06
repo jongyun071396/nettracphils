@@ -11,6 +11,7 @@ nav.navbar {
 	border-radius: 0px;
 	border: none;
 	background: #222222;
+	z-index: 1;
 }
 
 #menu-header{
@@ -21,7 +22,7 @@ nav.navbar {
 	text-transform: uppercase;
 	font-size: 13px;
 	color: #e4e4e4;
-	transition: 200ms ease-in-out all;
+	 
 }
 #menu-header li.active a {
 	font-weight: 700;
@@ -31,12 +32,21 @@ nav.navbar {
 
 /* HERO */
 #hero {
-	height: 100vh;
-
+	height: 105vh;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	background-image: url('../img/hero.jpg');
 	margin-top: -101px;
+	position: relative;
+}
+.hero-overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.48);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 /* underline transition */
 .sliding-middle-out {
@@ -69,8 +79,6 @@ div.navbar.navbar-static.bottom{
 }
 div.col-xs-12{
 	padding: 0;
-}
-div.navbar.navbar-static.bottom p img{
 }
 #footer-nci {
 	padding-left: 11px;
@@ -105,8 +113,8 @@ div.col-sm-10{
 	width:250px;
 	margin-left: 0px;
 }
-button.btn.btn-success{
-	width: 100px;
+button.btn.btn-primary{
+	width: 248px;
 }
 div.form-group{
 	padding-left: 50px;
@@ -116,6 +124,7 @@ h3.paddingtitleform{
 }
 div.form-group.text-center{
 	padding:0px;
+	padding-left: 75px;
 }
 #payroll-container{
 	margin-top: 100px;
@@ -123,7 +132,7 @@ div.form-group.text-center{
 	height: 401px;
 }
 div.form-group.pr{
-	padding-left: 0px;
+	padding-left:0px;
 }
 div.form-group.prr{
 	padding-left: 60px;
@@ -131,7 +140,7 @@ div.form-group.prr{
 #payroll-reg-container{
 	margin-top: 50px;
 	width: 700px;
-	height: 725px;
+	height: 875px;
 }
 #contact-us-margin{
 	padding-bottom: 26px;
@@ -223,7 +232,6 @@ hr{
 }
 navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
 	color:#333;
-	
 }
 .sidenav {
     height: 50%;
@@ -263,8 +271,52 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
     margin-left: 50px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   .sidenave a:hover{text-decoration: none;}
+=======
+#myCarousel{
+font-family: 'Source Sans Pro', sans-serif !important;
+font-weight: 300;
+}
+div.form-group.pr.text-center{
+	padding-left:0px;
+}
+div.col-sm-offset-4.col-sm-8{
+	margin-left:162px;
+}
+div.col-sm-offset-4.col-sm-8.fp{
+	margin-left:210px
+}
+button.btn.btn-primary.r{
+	width: 100px;
+}
+div.form-group.text-center.r{
+	padding-top: 15px;
+	padding-left: 108px;
+}
+option.dropdown-header{
+	font-size:15px;
+}
+div.col-xs-12.au{
+	margin-bottom: 10px;
+}
+/* Carousel */
+.carousel-inner .item h3 {
+	font-weight: 300;
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+.carousel-inner .item h2 {
+	margin-top: .2rem;
+	font-size: 5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#site-map-footer{
+	margin-bottom: 116px;
+>>>>>>> 0fe7b5a67fd8b39842587ebd88e8d26b69a0b987
 }

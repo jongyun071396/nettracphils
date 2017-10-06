@@ -1,4 +1,5 @@
 @extends('layouts.app') @section('custom-css')
+
 <style>
     nav.navbar {
         background: rgba(0, 0, 0, 0.3);
@@ -7,6 +8,7 @@
 
 @endsection @section('body') {{-- hero --}}
 <div id="hero">
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -14,15 +16,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  UNLIMITED HOSTING OPTIONS
+                    <h3>UNLIMITED HOSTING OPTIONS</h3>
                 </div>
                 <div class="item">
-                    GET ALL THE BUSINESS TOOLS<br/> YOU NEED
+                    <h3>GET ALL THE BUSINESS TOOLS YOU NEED</h3>
                 </div>
 
                 <div class="item">
-                   NEED A WEBSITE?<br/>
-                   NetTrac is your Lowest Cost Solutions
+                    <h3>NEED A WEBSITE?</h3>
+                    <h2>NetTrac is your Lowest Cost Solutions</h2>
                 </div>
             </div>
 

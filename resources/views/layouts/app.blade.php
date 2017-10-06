@@ -9,6 +9,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {{-- GOOGLE FONTS --}}
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 {{-- FONT AWESOME --}}
 <link rel="stylesheet" type="text/css" href="{{ url('fa/css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
@@ -35,6 +36,7 @@
 					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 				</ul>
 			</div>
+<<<<<<< HEAD
 			<div class="visible-sm visible-xs" >
 				<div class="navbar-header" style="padding:0px!important">	
 					<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
@@ -51,8 +53,12 @@
 							<li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }} menu-list"><a href="{{ url('payroll') }}" class="sliding-middle-out">Payroll System</a></li>
 							<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }} menu-list"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 					</ul>
+=======
+			{{-- resposive --}}
+				<div class="visible-sm visible-xs">
+>>>>>>> 0fe7b5a67fd8b39842587ebd88e8d26b69a0b987
 				</div>
-			</div>
+			{{-- end responsive --}}
 		</div>
 	</nav>
 

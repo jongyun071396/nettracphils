@@ -21,11 +21,11 @@
 						<input type="text" class="form-control"	 placeholder="" name="username">
 					</div>
 				</div>
-				<div class="form-group text-center">
+				<div class="form-group text-center f">
 					<a href="#">forget password?</a>
 				</div>
-				<div class="form-group text-center">        
-					<button type="submit" class="btn btn-success">Login</button>
+				<div class="form-group text-center">      
+					<button type="submit" class="btn btn-primary">Login</button>
 				</div>
 			</form>
 		</div>
