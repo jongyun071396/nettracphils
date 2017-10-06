@@ -32,16 +32,15 @@
     </div>
 </div>
 <div class="container" id="home_content">
-    <div class="row" id="types" style="margin-left:70px;">
+    <div class="row" id="types">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-5 col-md-offset-3" style="text-align: center;">
-                    <i class="fa fa-television fa-5x icon" aria-hidden="true"></i>
-                    <h1 class="title">WEB DEVELOPMENT</h1>
+                <div class="col-md-12">
+                    <h1 class="title"><i class="fa fa-television fa-5x icon" aria-hidden="true"></i>WEB DEVELOPMENT</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">FREE WEB 
                         <span class="price">FREE <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p> 
@@ -49,7 +48,7 @@
                         5 Pages of content, NetTrac Template based. Fast and Free!
                     </p>
                 </div>
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">STARTER WEB
                         <span class="price">Php 10,000 <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -57,10 +56,7 @@
                         6 Pages of content, ideal to get your corporate identity on the net.
                     </p>
                 </div>
-            </div>
-            <br/>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">CORPORATE WEB
                         <span class="price">Php 15,000 <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -68,7 +64,7 @@
                         10 Pages of content, with Database for Dynamic contents.
                     </p>
                 </div>
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">ENTERPRISE WEB
                         <span class="price">Php 30,000 <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -77,16 +73,15 @@
                     </p>
                 </div>
             </div>
-            <br/>
-            <br/>
+          
             <div class="row">
-                <div class="col-md-5 col-md-offset-3" style="text-align: center;">
-                    <i class="fa fa-envelope fa-5x icon" aria-hidden="true"></i>
-                    <h1 class="title">BULK EMAIL</h1>
+                <div class="col-md-12">
+                    
+                    <h1 class="title"><i class="fa fa-envelope fa-5x icon" aria-hidden="true"></i> BULK EMAIL</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">BE 1000
                          <span class="price">Php 400/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -94,7 +89,7 @@
                         Sends 1000 emails per month from your control panel.
                     </p>
                 </div>
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">BE 2500
                          <span class="price">Php 800/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -102,10 +97,7 @@
                         Sends 2500 emails per month from your control panel.
                     </p>
                 </div>
-            </div>
-            <br/>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">BE 3500
                          <span class="price">Php 1,000/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -113,7 +105,7 @@
                         Sends 3500 emails per month from your control panel.
                     </p>
                 </div>
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">BE 10000
                          <span class="price">Php 2,400/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -122,16 +114,13 @@
                     </p>
                 </div>
             </div>
-            <br/>
-            <br/>
             <div class="row">
-                <div class="col-md-5 col-md-offset-3" style="text-align: center;">
-                    <i class="fa fa-tasks fa-5x icon" aria-hidden="true"></i>
-                    <h1 class="title">HOSTING</h1>
+                <div class="col-md-12">
+                    <h1 class="title"> <i class="fa fa-tasks fa-5x icon" aria-hidden="true"></i> HOSTING</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">STARTER LINUX
                         <span class="price">Php 149/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -142,7 +131,7 @@
                         Databases, Unlimited Email Forwarding.
                     </p>
                 </div>
-                <div class="col-md-4 col-md-offset-1 services">
+                <div class="col-md-3 services">
                     <p class="servicestitle">BASIC LINUX
                         <span class="price">PPhp 229/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -154,10 +143,10 @@
                         Host 2 domains.
                     </p>
                 </div>
-            </div>
-            <br/>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-1 services">
+            
+        
+
+                <div class="col-md-3 services">
                     <p class="servicestitle">BUSINESS LINUX
                         <span class="price">Php 299/month <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                     </p>
@@ -169,7 +158,7 @@
                         Host 3 domains.
                     </p>
                 </div>
-            </div>
+           </div>
         </div>
     </div>
 </div>
