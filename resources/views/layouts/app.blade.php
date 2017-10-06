@@ -35,9 +35,22 @@
 					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 				</ul>
 			</div>
-			<div class="visible-sm visible-xs">
-				<div class="navbar-header" style="padding:0px!important">
-					<a href="{{ url('/') }}" class="navbar-brand"><img src="{{ url('img/logo.png') }}"></a>
+			<div class="visible-sm visible-xs" >
+				<div class="navbar-header" style="padding:0px!important">	
+					<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+				<a href="{{ url('/') }}" class="navbar-brand" style="float: right;"><img src="{{ url('img/logo.png') }}"></a>
+				</div>
+				<!--menu items-->
+				<div id="mySidenav" class="sidenav">
+					<ul style="list-style-type: none;">
+							<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+							<li class="{{ request()->segment(1) == '' ? 'active' : '' }} menu-list"><a href="{{ url('/') }}" class="sliding-middle-out">Home</a></li>
+							<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }} menu-list"><a href="{{ url('about') }}" class="sliding-middle-out">About Us</a></li>
+							<li class="{{ request()->segment(1) == 'support' ? 'active' : '' }} menu-list"><a href="{{ url('support') }}" class="sliding-middle-out">Support</a></li>
+							<li class="{{ request()->segment(1) == 'contact-us' ? 'active' : '' }} menu-list"><a href="{{ url('contact-us') }}" class="sliding-middle-out">Contact Us</a></li>
+							<li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }} menu-list"><a href="{{ url('payroll') }}" class="sliding-middle-out">Payroll System</a></li>
+							<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }} menu-list"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -70,6 +83,15 @@
 			</div>
 		</div>
 	</div>		
-	</footer>	
+	</footer>
+	<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>	
 </body>
 </html>
