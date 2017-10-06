@@ -22,11 +22,11 @@
 	<nav class ="navbar navbar-default">
 		<div class="container-fluid">
 			{{-- logo --}}
-			<div class="narbar-header">
-				<a href="{{ url('/') }}" class="navbar-brand"><img src="{{ url('img/logo.png') }}"></a>
-			</div>
+			<div class="visible-md visible-lg" style="padding: 0 5rem;">
+				<div class="navbar-header">
+					<a href="{{ url('/') }}" class="navbar-brand"><img src="{{ url('img/logo.png') }}"></a>
+				</div>
 			{{-- menu items --}}
-			<div>
 				<ul class="nav navbar-nav" id="menu-header">
 					<li class="{{ request()->segment(1) == '' ? 'active' : '' }}"><a href="{{ url('/') }}" class="sliding-middle-out">Home</a></li>
 					<li class="{{ request()->segment(1) == 'about' ? 'active' : '' }}"><a href="{{ url('about') }}" class="sliding-middle-out">About Us</a></li>
@@ -36,6 +36,10 @@
 					<li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>	
 				</ul>
 			</div>
+			{{-- resposive --}}
+				<div class="visible-sm visible-xs">
+				</div>
+			{{-- end responsive --}}
 		</div>
 	</nav>
 
@@ -44,7 +48,7 @@
 	<div class="container">
 	<div class="solid-border"></div>
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="visible-md visible-lg">
 				<div class="footer">
 
 					<div class="pull-left">
@@ -60,6 +64,9 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="visible-sm visible-xs">
+
 			</div>
 		</div>
 	</div>		

@@ -8,7 +8,6 @@ p {
 
 }
 nav.navbar {
-	padding: 0 5rem;
 	border-radius: 0px;
 	border: none;
 	background: #222222;
@@ -23,7 +22,7 @@ nav.navbar {
 	text-transform: uppercase;
 	font-size: 13px;
 	color: #e4e4e4;
-	transition: 200ms ease-in-out all;
+	 
 }
 #menu-header li.active a {
 	font-weight: 700;
@@ -179,21 +178,19 @@ hr{
 	border: .5px solid #c7c7c7;
 	margin: 3px 15px 20px 15px;}
 #home_content{
-	padding:30px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding:50px;
 }
 .services{
 		border:1px solid #eee;
-		height: 650px;
-		padding:10px;
+		padding:20px;
 		border-radius: 5px;
 		box-shadow: 2px 2px 5px #BEBEBE;
+		height: 170px;
+
 	}
 	.title{
-		font-size: 20px;
 		color:#006495;
-		font-weight: bold;
+		
 	}
 	.servicestitle{
 		color:#128CDF;
@@ -221,13 +218,22 @@ hr{
 	font-weight: bold!important;
 	text-align: center;
 }
-.icons{
-	padding:10px;
+.price{
+	color:white;
+	background-color: rgb(233, 97, 44);
+	padding:5px;
+	border-radius: 2px;
+	font-size: 12px;
+	float: right;
 }
-.icons:hover{
-	color:#aaa;
+.icon{
+	color: #F2635F;
+	font-size: 90px;
+}
+navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
+	color:#333;
+}
 
-}
 #myCarousel{
 font-family: 'Source Sans Pro', sans-serif !important;
 font-weight: 300;
@@ -266,4 +272,7 @@ div.col-xs-12.au{
 	font-size: 5rem;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+#site-map-footer{
+	margin-bottom: 116px;
 }
