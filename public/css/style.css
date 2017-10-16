@@ -1,5 +1,5 @@
 html, body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
@@ -40,11 +40,20 @@ nav.navbar {
 	margin-top: -101px;
 	position: relative;
 }
+#sm-hero{
+	height: 105vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/hero.jpg');
+	margin-top: -101px;
+	position: relative;
+}
 .hero-overlay {
 	position: absolute;
 	background: rgba(0, 0, 0, 0.48);
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	top: 0;
 	left: 0;
 }
@@ -126,6 +135,10 @@ div.form-group.text-center{
 	padding:0px;
 	padding-left: 75px;
 }
+div#btnsend{
+	padding:0px;
+	text-align: center;
+}
 #payroll-container{
 	margin-top: 100px;
 	width: 550px;
@@ -181,36 +194,62 @@ hr{
 	padding:50px;
 }
 .services{
-		border:1px solid #eee;
-		padding:20px;
-		border-radius: 5px;
-		box-shadow: 2px 2px 5px #BEBEBE;
-		height: 170px;
-
+	border:1px solid #eee;
+	padding:20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #BEBEBE;
+	height: 170px;
+	
 	}
-	.title{
-		color:#006495;
-		
+.col-md-3.services{
+	height: 180px;
+}
+.col-md-3.services.h{
+	height: 220px;
+	margin-left:63px;
+}
+.col-md-3.services.b{
+	height: 180px;
+}
+.col-xs-12.hgt{
+	height: 273.5px; 
+	margin-bottom: 40px;
+}
+.servicestitle{
+	color:#128CDF;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
 	}
-	.servicestitle{
-		color:#128CDF;
-		font-size: 17px;
-		font-weight: bold;
-	}
-	.label-important{
-		
-		background-color: #E0A025;
-		color:white;
-		padding:2px;
-		border-radius: 3px;
-		font-weight: bold;
+.label-important{
+	background-color: #E0A025;
+	color:white;
+	padding:2px;
+	border-radius: 3px;
+	font-weight: bold;
 	}
 .definition{
 	padding:5px;
 	color:rgb(51, 51, 51);
 }
-.hero-content{
-	padding-top:300px;
+#hero-content {
+	margin-top: 15%;
+	text-align: center;
+	color: #f8f8f8;
+}
+#hero-content h1,
+#hero-content h2,
+#hero-content h3 {
+	margin: 0;
+	display:none;
+}
+#hero-content h2 {
+	font-weight: 300;
+}
+#hero-content h1 {
+	font-weight: 600;
+	font-size: 36px;
+	text-transform: uppercase;
 }
 .item{
 	color:white;
@@ -218,18 +257,35 @@ hr{
 	font-weight: bold!important;
 	text-align: center;
 }
-.price{
-	color:white;
-	background-color: rgb(233, 97, 44);
-	padding:5px;
+a.title{
+	text-decoration: none;
+	transition: 200ms ease-in-out all;color:#128CDF;
+}
+a.title:hover{
+	color:#006495;
+	font-size: 18px;
+
+}
+
+a.price {
+	display: inline-block;
+	margin-top: 1.5rem;
+	border: 2px solid rgb(233, 97, 44);
+	text-decoration: none;
+	color: rgb(233, 97, 44);
+	padding: 8px 30px;
 	border-radius: 2px;
 	font-size: 12px;
-	float: right;
+	transition: 200ms ease-in-out all;
+}
+.price:hover {
+	color: #f8f8f8;
+	background-color: rgb(233, 97, 44);
 }
 .icon{
 	color: #F2635F;
-	font-size: 90px;
-}
+	margin-right: 20px;
+}	
 navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
 	color:#333;
 }
@@ -248,7 +304,6 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
 }
 
 .sidenav a {
-    
     text-decoration: none;
     font-size: 18px;
     text-align: center;
@@ -260,7 +315,6 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
 
 .sidenav a:hover{
     color: #f1f1f1;
-   
 }
 
 .sidenav .closebtn {
@@ -275,11 +329,10 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  
 }
 #myCarousel{
-font-family: 'Source Sans Pro', sans-serif !important;
-font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-weight: 300;
 }
 div.form-group.pr.text-center{
 	padding-left:0px;
@@ -293,6 +346,10 @@ div.col-sm-offset-4.col-sm-8.fp{
 button.btn.btn-primary.r{
 	width: 100px;
 }
+.btn.btn-success{
+	width: 100px;
+}
+
 div.form-group.text-center.r{
 	padding-top: 15px;
 	padding-left: 108px;
@@ -318,3 +375,17 @@ div.col-xs-12.au{
 }
 #site-map-footer{
 	margin-bottom: 116px;
+}
+option.dropdown-header.item{
+	font-size: 16px;
+	color: grey;
+}
+.fadeInDown{
+	font-size: 28px;
+}
+.fadeInUp{
+	font-size: 24px;
+}
+.row.mb-2{
+	margin-bottom: 20px;
+}

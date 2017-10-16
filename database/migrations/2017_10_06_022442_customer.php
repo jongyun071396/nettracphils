@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PayrollRegister extends Migration
+class Customer extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class PayrollRegister extends Migration
      */
     public function up()
     {
-        Schema::create('payroll_system', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('users', function (Blueprint $table) {
+           $table->increments('id');
+            $table->string('name');
             $table->string('username');
             $table->string('email')->unique();
             $table->string('password');
@@ -28,6 +29,6 @@ class PayrollRegister extends Migration
      */
     public function down()
     {
-       Schema::drop('payroll_system');
+        Schema::drop('users');
     }
 }

@@ -12,6 +12,11 @@
 */
 
 Route::get('/', 'PagesController');
+
+Route::post('/insert', 'Controller@insert');
+
+	// $users=DB::table('users')->get();
+
 Route::get('about', 'PagesController');
 Route::get('support', 'PagesController');
 Route::get('contact-us', 'PagesController');

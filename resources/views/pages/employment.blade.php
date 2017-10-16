@@ -6,8 +6,8 @@
 				<h2>NetTrac Communications Inc. - Job Opportunities</h2>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
+		<div class="row mb-2">
+			<div class="col-md-12 ">
 				<h4>Current NetTrac Opportunities: 	Website Application Designer/Graphic Artist/ required for Immediate Hiring.</h4>
 			</div>
 			<div class="col-md-6">

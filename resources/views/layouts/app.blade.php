@@ -7,12 +7,20 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://expansionscollective.com/testscripts/jquery.fullPage.js"></script>
+
 {{-- GOOGLE FONTS --}}
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,600" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 {{-- FONT AWESOME --}}
 <link rel="stylesheet" type="text/css" href="{{ url('fa/css/font-awesome.min.css') }}">
+{{-- ANIMATE CSS --}}
+<link rel="stylesheet" href="{{ url('css/animate.css') }}">
+{{-- STYLESHEET --}}
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
+{{-- FULLPAGE CSS--}}
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
 @yield('custom-css')
 @yield('map')
 @yield('footer')
@@ -88,14 +96,16 @@
 		</div>
 	</div>		
 	</footer>
+	{{-- BOOTSTRAP --}}
+	<script src="{{ url('js/bootstrap.js') }}"></script>
+	{{-- CUSTOM JS --}}
+	@yield('custom-js')
+	{{-- FULLPAGE JS --}}
 	<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
+		$(document).ready(function(){
+			$('#fullpage').fullpage(); 
+		});
+	</script>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>	
 </body>
 </html>

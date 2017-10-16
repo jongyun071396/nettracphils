@@ -56,6 +56,32 @@
 									<input type="text" class="form-control" placeholder="Enter Comment/Requests" name="comment-requests">
 								</div> 
 							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4">Package:</label>
+								<div class="col-sm-10" >
+									<select name="payroll-system" id="dropdown">
+									    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"></button>
+										<ul class="dropdown-menu " role="menu" aria-labelledby="menu1">
+										{{-- <option class="dropdown-header"></option> --}}
+										<option class="dropdown-header item" value="web-development">WEB DEVELOPMENT</option>
+										<option value="free-web" {{ request()->input('package') == 'free-web' ? 'selected' : '' }}>Free Web</option>
+										<option value="starter-web" {{ request()->input('package') == 'starter-web' ? 'selected' : '' }}>Started Web</option>
+										<option value="corporate-web" {{ request()->input('package') == 'corporate-web' ? 'selected' : '' }}>Corporate Web</option>
+										<option value="enterprise-web" {{ request()->input('package') == 'enterprise-web' ? 'selected' : '' }}>Enterprise Web</option>
+										<option class="dropdown-header item" value="buld-mail">BULK MAIL</option>
+										<option value="be-1000" {{ request()->input('package') == 'be-1000' ? 'selected' : '' }}>BE 1000</option>
+										<option value="be-2500" {{ request()->input('package') == 'be-2500' ? 'selected' : '' }}>BE 2500</option>
+										<option value="be-3500" {{ request()->input('package') == 'be-3500' ? 'selected' : '' }}>BE 3500</option>
+										<option value="be-10000" {{ request()->input('package') == 'be-10000' ? 'selected' : '' }}>BE 10000</option>
+										
+										<option class="dropdown-header item" value="hosting">HOSTING</option>
+										<option value="starter-linux" {{ request()->input('package') == 'starter-linux' ? 'selected' : '' }}>Starter Linux</option>
+										<option value="basic-linux" {{ request()->input('package') == 'basic-linux' ? 'selected' : '' }}>Basic Linux</option>
+										<option value="business-linux" {{ request()->input('package') == 'business-linux' ? 'selected' : '' }}>Business Linux</option>
+										</ul>
+									</select>
+								</div>
+							</div>
 							<h3 class="paddingtitleform">Security Information:</h3>
 							<hr>
 							<div class="form-group">
@@ -70,7 +96,7 @@
 									<input type="button" class="btn btn-default" name="btn-code" value="Submit">
 								</div>
 							</div>
-							<div class="form-group text-center">        
+							<div class="form-group text-center" id="btnsend">   
 									<button type="submit" class="btn btn-success">Send</button>
 							</div>
 						</form>
