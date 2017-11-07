@@ -100,7 +100,7 @@
 									Account Information
 								</div>
 							</div>
-							<div class="row content">
+							<div class="row content" style="margin-top: 20px;">
 								<div class="col-md-6">
 									<label>Email Address</label>
 									<input type="email" name="email_add" required="">
@@ -134,17 +134,8 @@
 					<div class="row content" style="padding: 10px">
 						<div class="col-md-12">
 							<h4>Total Amount:</h4> <span style="color:rgb(233, 97, 44);font-size: 20px;font-weight: bold">Php {{Cart::total()}}.00</span>
-							<br/>
-							<i>Pay with your PayPal account.</i>
-							<br/>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-2">
-							<div id="paypal-button"></div>
-						</div>
-					</div>
-					<br/>
 					<div class="row">
 						<div class="col-md-6">
 							<button class="btn btn-primary">Continue Checkout 

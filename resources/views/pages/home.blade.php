@@ -83,7 +83,7 @@
                     <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <button type="submit" class="btn btn-warning add-to-cart">
+                        <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button">
                             @if($product->price == 0)
                                 FREE <i class="fa fa-shopping-cart"></i>
                                 Add to cart
@@ -93,7 +93,7 @@
                                 Add to cart
                             @endif
                           
-                        </button>
+                        </button></a>
                     </form>
                 </div>
                 @endforeach 
@@ -113,11 +113,11 @@
                      <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <button type="submit" class="btn btn-warning add-to-cart">
+                         <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button">
                             Php {{$product->price}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
-                        </button>
+                        </button> </a>
                     </form>
                 </div>
                 @endforeach 
@@ -137,11 +137,11 @@
                      <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <button type="submit" class="btn btn-warning add-to-cart" style="">
+                         <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button" style="">
                             Php {{$product->price}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
-                        </button>
+                        </button></a>
                     </form>
                 </div>
                 @endforeach 
