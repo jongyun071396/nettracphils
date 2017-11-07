@@ -10,7 +10,7 @@
 	</style>
 @endsection
 @section('body')
-	<div class="container" id="privacy-pad">
+	<div class="container" id="privacy-pad" style="padding:30px">
 		<div class="row">
 			<div class="col-xs-12">
 				<h1>NetTrac Communications Inc. - Privacy Statement</h1>

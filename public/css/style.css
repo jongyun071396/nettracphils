@@ -29,6 +29,21 @@ nav.navbar {
 	color: #f7f7f7;
 	background: none;
 }
+#responsive-menu-header li a{
+	text-transform: uppercase;
+
+	font-size: 13px;
+	color: #e4e4e4;
+}
+#responsive-menu-header li a:hover{
+	text-decoration: none;
+}
+#responsive-menu-header li.active a{
+	font-weight: 700;
+	color: #f7f7f7;
+	background: none;
+	text-decoration: none;
+}
 
 /* HERO */
 #hero {
@@ -205,7 +220,7 @@ hr{
 	height: 180px;
 }
 .col-md-3.services.h{
-	height: 220px;
+	height: 240px;
 	margin-left:63px;
 }
 .col-md-3.services.b{
@@ -266,7 +281,6 @@ a.title:hover{
 	font-size: 18px;
 
 }
-
 a.price {
 	display: inline-block;
 	margin-top: 1.5rem;
@@ -388,4 +402,10 @@ option.dropdown-header.item{
 }
 .row.mb-2{
 	margin-bottom: 20px;
+}
+.resp{
+	height: 100%
+}
+ul .footer_menus li{
+	display:inline;
 }

@@ -8,8 +8,9 @@
 		}
 	</style>
 @endsection
+<script src='https://www.google.com/recaptcha/api.js'></script>
 @section('body')
-		<div class="container">
+		<div class="container" style="padding:30px">
 			<div class="row">
 				<div class="col-md-12" id="contact-us-margin">
 					<div class="col-md-6">
@@ -39,25 +40,25 @@
 						<h3 class="paddingtitleform">Enter your information here:</h3>
 						<hr>
 							<div class="form-group">
-								<label class="control-label col-sm-4" for="name">*Name:</label>
+								<label class="control-label col-sm-3" for="name">*Name:</label>
 								<div class="col-sm-10">
 									<input type="text" class="form-control"	 placeholder="Enter Name" name="name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-sm-4" for="email">*Email:</label>
+								<label class="control-label col-sm-3" for="email">*Email:</label>
 								<div class="col-sm-10">          
 									<input type="email" class="form-control" placeholder="Enter Email" name="email">
 								</div>
 							</div>
 							<div class="form-group">        
-								<label class="control-label col-sm-4">*Comment/Requests:</label>
+								<label class="control-label col-sm-3">*Comment/Requests:</label>
 								<div class="col-sm-10">          
 									<input type="text" class="form-control" placeholder="Enter Comment/Requests" name="comment-requests">
 								</div> 
 							</div>
 							<div class="form-group">
-								<label class="control-label col-sm-4">Package:</label>
+								<label class="control-label col-sm-3">Package:</label>
 								<div class="col-sm-10" >
 									<select name="payroll-system" id="dropdown">
 									    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"></button>
@@ -82,23 +83,36 @@
 									</select>
 								</div>
 							</div>
-							<h3 class="paddingtitleform">Security Information:</h3>
+								<div class="form-group text-center">        
+									<div class="row">
+										<div class="col-sm-8 col-sm-offset-1">	
+											<button type="submit" class="btn btn-primary" style="width: 50%">
+												Send
+											</button>
+										</div>
+									</div>
+
+							</div>
+							<!-- <h3 class="paddingtitleform">Security Information:</h3> -->
 							<hr>
 							<div class="form-group">
-								<label class="control-label col-sm-4" for="code">Enter the Code:</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control"	 placeholder="Enter Code" name="code">
+								<div class="control-label col-md-offset-2">	
+									<div class="g-recaptcha" data-sitekey="6Lc27DUUAAAAAJZhtCM-FdLjvb7LKLzcGKaIyHwz"></div>
 								</div>
 							</div>
-							<div class="form-group">
+			<!-- 				<div class="form-group">
+				<label class="control-label col-sm-4" for="code">Enter the Code:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control"	 placeholder="Enter Code" name="code">
+				</div>
+			</div> -->
+							<!-- <div class="form-group">
 								<label class="control-label col-sm-4" for="btn-code">Security code:</label>
 								<div class="col-sm-10">          
 									<input type="button" class="btn btn-default" name="btn-code" value="Submit">
 								</div>
-							</div>
-							<div class="form-group text-center" id="btnsend">   
-									<button type="submit" class="btn btn-success">Send</button>
-							</div>
+							</div> -->
+						
 						</form>
 					</div>
 				</div>

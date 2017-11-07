@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', 'PagesController');
-
+Route::get('/', 'PagesController@index');
 Route::post('/insert', 'Controller@insert');
+
 
 	// $users=DB::table('users')->get();
 
@@ -22,11 +22,17 @@ Route::get('support', 'PagesController');
 Route::get('contact-us', 'PagesController');
 Route::get('payroll', 'PagesController');
 Route::get('control-panel', 'PagesController');
-
+Route::post('login', 'PagesController@authenticate');
 Route::get('privacy', 'PagesController');
 Route::get('terms-of-service', 'PagesController');
 Route::get('employment', 'PagesController');
 Route::get('site-map', 'PagesController');
 
-Route::get('payroll-register', 'PagesController');
-
+Route::get('registration', 'PagesController');
+Route::post('register','PagesController@register');
+Route::post('getCart','cart_controller@getCart');
+Route::get('cart','cart_controller@cart_view');
+Route::post('remove_cart','cart_controller@remove_cart');
+Route::post('increase_cart','cart_controller@increase_cart');
+//Route::post('decrease_cart','PagesController@decrease_cart');
+Route::get('customer_login','PagesController@customer_login');

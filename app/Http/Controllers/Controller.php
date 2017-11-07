@@ -16,4 +16,6 @@ class Controller extends BaseController
     // 	$data= array('username' => $username,'password'=>$password );
     // 	DB::table('users')->($data);
     // }
+
+    
 }

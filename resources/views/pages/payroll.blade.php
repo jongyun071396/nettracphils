@@ -10,36 +10,68 @@
 	</style>
 @endsection
 @section('body')
-<div class="container" id="payroll-container">
-	<div class="row">
-		<div class="col-md-12">
-			<form class="form form-horizontal col-md-12 " id="container-form" action="/control-panel.blade.php">
+<div class="visible-lg visible-md visible-sm">
+	<div class="container" id="payroll-container">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form form-horizontal " id="container-form" action="{{ url('login') }}" method="POST">
+					<input type="hidden" name="_token" value="{{ csrf_token() }}">
+					<h3 class="paddingtitleform">Payroll System Login:</h3>
+					<hr>
+					<div class="form-group pr">
+						<label class="control-label col-sm-4" for="username">Username:</label>
+						<div class="col-sm-10 input-group">
+						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" class="form-control"	 placeholder="" name="username">
+						</div>
+					</div>
+					<div class="form-group pr">
+						<label class="control-label col-sm-4" for="pr-password">Password:</label>
+						<div class="col-sm-10 input-group">
+						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>          
+							<input type="password" class="form-control" placeholder="" name="password">
+						</div>
+					</div>
+					<div class="form-group pr">
+						<div class="col-sm-offset-4 col-sm-8">          
+							<button type="submit" class="btn btn-primary">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="visible-xs">
+	<div class="container" >
+		<div class="row" style="padding:50px">
+			<form class="form form-horizontal " id="container-form" action="/control-panel.blade.php" style="padding:30px">
 				<h3 class="paddingtitleform">Payroll System Login:</h3>
 				<hr>
 				<div class="form-group pr">
-					<label class="control-label col-sm-4" for="username">Username:</label>
-					<div class="col-sm-10 input-group">
-					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-						<input type="text" class="form-control"	 placeholder="" name="username">
-					</div>
+						<label class="control-label" for="username">Username:</label>
+						<div class="col-sm-5 input-group" style="">
+						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text"	 placeholder="" name="username" style="height: 30px;width: 100%">
+						</div>
 				</div>
 				<div class="form-group pr">
-					<label class="control-label col-sm-4" for="pr-password">Password:</label>
-					<div class="col-sm-10 input-group">
-					<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>          
-						<input type="password" class="form-control" placeholder="" name="pr-password">
-					</div>
+						<label class="control-label" for="password">Password:</label>
+						<div class="col-sm-5 input-group" style="">
+						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="password" 	 placeholder="" name="password" style="height: 30px;width: 100%">
+						</div>
 				</div>
 				<div class="form-group pr">
-					<div class="col-sm-offset-4 col-sm-8 fp">          
-						<a href="#">forget password?</a> | <a href="{{url('payroll-register')}}">Sign up</a>
-					</div>
+						<div class="fp" style="text-align: center;">          
+							<a href="#">forget password?</a> | <a href="{{url('payroll-register')}}">Sign up</a>
+						</div>
 				</div>
-				<div class="form-group pr">
-					<div class="col-sm-offset-4 col-sm-8">          
-						<button type="submit" class="btn btn-primary">Login</button>
+						<div class="form-group pr">
+						<div class="col-sm-3">          
+							<button type="submit" class="btn btn-primary" style="width: 100%">Login</button>
+						</div>
 					</div>
-				</div>
 			</form>
 		</div>
 	</div>

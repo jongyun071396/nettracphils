@@ -10,12 +10,10 @@
 	</style>
 @endsection
 @section('body')
-	<div class="container">
+	<div class="container" style="padding:50px">
 		<div class="row">
-			<div class="col-xs-12" id="support-margin">
+			<div class="" id="">
 				<h2>NetTrac Communications Inc. - Support</h2><br>
-				<ul style="list-style: none">
-					<li>
 						<b>To Open a Support Ticket Please Use This Link (You must have a NetTrac Control Panel Login to Access this Portal):</b> 
 						<span class="email">supportcenter.nettrac.net</span> 
 						<br>
@@ -38,10 +36,6 @@
 
 						It is no longer possible to email support directly. To contact support staff you can call directly for support or open a support ticket. <br>
 						This change has been made to streamline our support services. 
-					</li>
-				</ul>
-				
-
 			</div>
 		</div>
 	</div>
