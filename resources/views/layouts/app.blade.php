@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{ url('css/animate.css') }}"> {{-- STYLESHEET --}}
     <link rel="stylesheet" href="{{ url('css/style.css') }}"> {{-- FULLPAGE CSS--}}
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" /> @yield('custom-css') @yield('map') @yield('footer')
+    {{-- ReCAPTCHA --}}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -55,6 +57,7 @@
         </div>
             <div class="visible-xs">
 				<div class="navbar-header">
+                    
                     <a href="{{ url('/') }}" class="navbar-brand pull-right"><img src="{{ url('img/logo.png') }}"></a>
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -67,7 +70,7 @@
                     <li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>
                    	</ul>
                 </div>
-                <span style="font-size:25px;cursor:pointer;color:#bbb;" onclick="openNav()" style="margin-top: 10%">&#9776;</span>
+                <span style="weight:600;font-size:25px;cursor:pointer;color:#bbb;" onclick="openNav()" style="margin-top: 10%">&#9776;</span>
                 </div>
           
             </div>
@@ -77,7 +80,7 @@
     <footer class="fixed-bottom">
 
         <div class="solid-border"></div>
-
+                {{-- DESKTOP --}}
         <div class="visible-md visible-lg">
             <div class="footer">
 
@@ -95,23 +98,25 @@
                 </div>
             </div>
         </div>
-        <div class="visible-sm visible-xs" style="position: fixed">
-			<div class="" style="text-align: center;">
-				<ul class="nav navbar-nav footer_menus" style="display: inline">
-                        <li class="{{ request()->segment(1) == 'privacy' ? 'active' : '' }}"><a href="{{ url('privacy') }}">Privacy</a></li>
-                        <li class="{{ request()->segment(1) == 'terms-of-service' ? 'active' : '' }}"><a href="{{ url('terms-of-service') }}">Terms of Service</a></li>
-                        <li class="{{ request()->segment(1) == 'employment' ? 'active' : '' }}"><a href="{{ url('employment') }}">Employement</a></li>
-                        <li class="{{ request()->segment(1) == 'site-map' ? 'active' : '' }}"><a href="{{ url('site-map') }}">Site Map</a></li>
-                    </ul>
-			</div>
-            <div class="footer" style="text-align: center;">
-                    <a href="{{ url('/') }}"><img id="footer-logo" src="../img/footer.png"></a>
-                    <span id="footer-nci">
-							© 2017 NetTrac Philippines Inc. A Canadian company serving the world.
-					</span>
-               
+                {{-- MOBILE --}}
+        <div class="visible-sm visible-xs">    
+            <div class="container">
 
-            </div>
+                <ul class="nav navbar-nav ">
+                    <li class="inline-menus {{ request()->segment(1) == 'privacy' ? 'active' : '' }}"><a href="{{ url('privacy') }}">Privacy</a></li>|
+                    <li class="inline-menus {{ request()->segment(1) == 'terms-of-service' ? 'active' : '' }}"><a href="{{ url('terms-of-service') }}">Terms of Service</a></li>|
+                    <li class="inline-menus {{ request()->segment(1) == 'employment' ? 'active' : '' }}"><a href="{{ url('employment') }}">Employement</a></li>|
+                    <li class="inline-menus {{ request()->segment(1) == 'site-map' ? 'active' : '' }}"><a href="{{ url('site-map') }}">Site Map</a></li>
+                </ul>
+                <span id="footer-nci" style=""> 
+                    <div class="text-center">
+                        <a href="{{ url('/') }}"><img id="footer-logo" src="../img/footer.png"></a>
+    				    © 2017 NetTrac Philippines Inc.
+                    </div>
+                    <div class="text-center mtop">A Canadian company serving the world.</div>
+				</span>
+         
+            </div>   
         </div>
 
     </footer>

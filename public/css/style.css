@@ -116,6 +116,7 @@ div.col-xs-12{
 	border: .5px solid;
 	opacity:.5;
 }
+
 #ext{
 	margin-left: -20px;
 	width: 300px;
@@ -228,7 +229,12 @@ hr{
 	height: 180px;
 }
 .col-xs-12.hgt{
+	margin-top: 200px;
 	height: 273.5px; 
+	margin-bottom: 40px;
+}
+.col-xs-12.hgt2{
+	height: 500px; 
 	margin-bottom: 40px;
 }
 .servicestitle{
@@ -249,7 +255,7 @@ hr{
 	color:rgb(51, 51, 51);
 }
 #hero-content {
-	margin-top: 15%;
+	margin-top: 60%;
 	text-align: center;
 	color: #f8f8f8;
 }
@@ -407,9 +413,7 @@ option.dropdown-header.item{
 .resp{
 	height: 100%
 }
-ul .footer_menus li{
-	display:inline;
-}
+
 /*Ghost button*/
 .ghost-button {
     color: rgb(233, 97, 44);
@@ -441,3 +445,28 @@ a.ghost-button2{
 	margin-top: 10px;
 }
 /*End Ghost Button*/
+.extwid{
+	width: 275px;
+}
+	/*MOBILE FOOTER*/
+li.inline-menus{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+li.inline-menus a{
+	padding: 0px 5px;
+	color:#808080;
+}
+ul.nav.navbar-nav{
+	margin-top: 15px;
+	height: 20px;
+	text-align: center;
+
+}
+div.text-center{
+	margin-top: -30px;
+}
+div.text-center.mtop{
+	margin-top: -8px;
+}
+	/*END MOBILE FOOTER*/

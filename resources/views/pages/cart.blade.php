@@ -96,9 +96,6 @@
 					</button>
 				</a>
 			</div>
-			<div class="col-md-2" style="margin-top: -2px;color: #13659C">
-				<i class="fa fa-cc-paypal fa-4x" aria-hidden="true"></i>
-			</div>
 		</div>
 	</div>
 	<br/>

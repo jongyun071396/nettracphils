@@ -1,5 +1,6 @@
 @extends('layouts.app') 
 @section('custom-css')
+
 <style>
     nav.navbar {
         background: rgba(0, 0, 0, 0.3);
@@ -16,6 +17,7 @@
     }
 </style>
 @endsection 
+        {{-- DESKTOP --}}
 @section('body') {{-- hero --}}
 <div class="visible-md visible-lg">
     <div id="hero">
@@ -35,32 +37,21 @@
         </div>
     </div>
 </div>
+        {{-- MOBILE  --}}
 <div class="visible-sm visible-xs">
     <div id="sm-hero">
         <div class="hero-overlay"></div>
-        <div class="container hero-content" style="padding-top: 250px;">
-            <br>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h3>UNLIMITED HOSTING OPTIONS</h3>
-                    </div>
-                    <div class="item">
-                        <h3>GET ALL THE BUSINESS TOOLS YOU NEED</h3>
-                    </div>
-                    <div class="item">
-                        <h3>NEED A WEBSITE?</h3>
-                        <h2>NetTrac is your Lowest Cost Solutions</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hgt2">
+                    <div id="hero-content">
+                        <h2 class="fadeInDown">UNLIMITED HOSTING OPTIONS</h2>
+                        <h1 class="fadeInRight">GET ALL THE BUSINESS TOOLS YOU NEED</h1>
+                        <h3 class="fadeInUp"> Your lowest Cost Solutions</h3>
                     </div>
                 </div>
-
-                <!-- Left and right controls -->
             </div>
-
         </div>
-
     </div>
 </div>
 <div class="visible-lg visible-md">

@@ -64,7 +64,7 @@
 							Kitchener, On.<br>
 							Canada, N2K3S7</p>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-2 extwid">
 							<h4>Mailing Address</h4>
 							<p>NetTrac Communications Inc.<br>
 							P.0. Box 122<br>
@@ -79,7 +79,7 @@
 							Talisay City,<br>
 							Cebu, Philippines 6045</p>
 						</div>
-						<div class="col-md-4" id="ext">
+						<div class="col-md-3" id="ext">
 							<h4>You can contact us by emailing</h4>
 							<p>Or in North America by calling 1-877-625-5444 <br>
 							Or in Australia by calling +61 2 6181-0700 <br>

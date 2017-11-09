@@ -8,7 +8,6 @@
 		}
 	</style>
 @endsection
-<script src='https://www.google.com/recaptcha/api.js'></script>
 @section('body')
 		<div class="container" style="padding:30px">
 			<div class="row">
@@ -95,11 +94,18 @@
 							</div>
 							<!-- <h3 class="paddingtitleform">Security Information:</h3> -->
 							<hr>
+							<form action="contact-us.blade.php" method="post">
 							<div class="form-group">
 								<div class="control-label col-md-offset-2">	
-									<div class="g-recaptcha" data-sitekey="6Lc27DUUAAAAAJZhtCM-FdLjvb7LKLzcGKaIyHwz"></div>
+									<div class="g-recaptcha" data-sitekey="6Lf2kzcUAAAAAGGyTCBr4eLil1bAfH255QuRL1hr"></div>
 								</div>
 							</div>
+							</form>
+							@php
+								if(isset($_POST['g-recaptcha'])&& ($_POST['g-recaptcha'])){
+									var_dump($_POST);
+								}
+							@endphp
 			<!-- 				<div class="form-group">
 				<label class="control-label col-sm-4" for="code">Enter the Code:</label>
 				<div class="col-sm-10">
