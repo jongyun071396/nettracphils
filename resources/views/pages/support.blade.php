@@ -2,7 +2,6 @@
 @section('footer')
 	<style>
 		footer {
-
 		    height: 100px;
 		    bottom: 0;
 		    width: 100%;
@@ -10,9 +9,8 @@
 	</style>
 @endsection
 @section('body')
-	<div class="container" style="padding:50px">
+	<div class="container" style="padding: 45px 50px 45px 50px;">
 		<div class="row">
-			<div class="" id="">
 				<h2>NetTrac Communications Inc. - Support</h2><br>
 						<b>To Open a Support Ticket Please Use This Link (You must have a NetTrac Control Panel Login to Access this Portal):</b> 
 						<span class="email">supportcenter.nettrac.net</span> 
@@ -36,7 +34,6 @@
 
 						It is no longer possible to email support directly. To contact support staff you can call directly for support or open a support ticket. <br>
 						This change has been made to streamline our support services. 
-			</div>
 		</div>
 	</div>
 @endsection

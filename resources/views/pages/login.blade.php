@@ -3,6 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login Page</title>
+	<style>
+		form{
+			trasform
+		}
+	</style>
 </head>
 <body>
 	<form action="/insert" method="post">

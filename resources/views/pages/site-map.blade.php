@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('body')
 	<div class="container" id="site-map-footer" style="padding:30px">
-		<div class="row">
-			<div class="col-md-5">
-				<h3>NetTrac Communications Inc. - Site Map</h3>
+		<div class="row  mb-1">
+			<div class="col-md-6">
+				<h2>NetTrac Communications Inc. - Site Map</h2>
 			</div>
 		</div>
 		<div class="row" style="">

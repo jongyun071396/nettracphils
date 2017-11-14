@@ -65,3 +65,19 @@
 		</div>
 	</div>
 @endsection
+<script>
+  paypal.Button.render({
+    env: 'production',  // Or 'sandbox'
+    commit: true,       // Show 'Pay Now' button
+    payment: function () {
+      /*
+       * Set up the payment here
+       */
+    },
+    onAuthorize: function (data, actions) {
+      /*
+       * Execute the payment here
+       */
+    }
+  }, '#paypal-button');
+</script>
