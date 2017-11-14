@@ -5,7 +5,6 @@
     nav.navbar {
         background: rgba(0, 0, 0, 0.3);
     }
-    
     #test {
         display: none;
         height: 120px;
@@ -19,7 +18,7 @@
 @endsection 
         {{-- DESKTOP --}}
 @section('body') {{-- hero --}}
-<div class="visible-md visible-lg">
+
     <div id="hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -36,24 +35,9 @@
             </div>
         </div>
     </div>
-</div>
+    
+
         {{-- MOBILE  --}}
-<div class="visible-sm visible-xs">
-    <div id="sm-hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 hgt2">
-                    <div id="hero-content">
-                        <h2 class="fadeInDown">UNLIMITED HOSTING OPTIONS</h2>
-                        <h1 class="fadeInRight">GET ALL THE BUSINESS TOOLS YOU NEED</h1>
-                        <h3 class="fadeInUp"> Your lowest Cost Solutions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="visible-lg visible-md">
     <div class="container" id="home_content section0" style="padding:30px">
         <div class="row" id="types">
@@ -231,7 +215,6 @@
     $(document).ready(function() {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         setTimeout(function() {
-            // $('.hero-content').fadeIn().addClass(animationName).one(animationEnd,
             $('#hero-content h2').show().addClass('animated').one(animationEnd, function() {
                 $('#hero-content h1').show().addClass('animated').one(animationEnd, function() {
                     $('#hero-content h3').show().addClass('animated');

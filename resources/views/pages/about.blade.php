@@ -12,10 +12,10 @@
 	<div class="visible-lg visible-md">
 	<div class="container" style="padding:30px">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-lg-12">
 				<h2>About Us</h2>
 					<p>NetTrac has been designing and hosting web sites and mission critical applications since 1996. We combine technology and service in the right mix allowing customers to customize their solutions while providing them with a highly available hosting environment. Setting the standard on customer service and satisfaction is our corporate goal. Since inception the development of longstanding relationships with all clients, large or small, has always been Job One! </p>
-					<div class="col-md-12">
+					<div class="col-md-12 col-lg-12">
 						<div class="col-md-6">
 							<h3>Our Beliefs:</h3>
 							<p>We believe that if you need an organizational chart to know your company, you have lost touch.
@@ -33,7 +33,7 @@
 							<p>With our main facility located in Waterloo, Canada and staff there and in the South East Asia, we can service your needs 24 hours per day. You will always find friendly support and service at NetTrac.</p>
 						</div>
 
-						<div class="col-md-6">
+						<div class="col-md-6 col-lg-6">
 							<h3>Location</h3>
 							    <div id="map"></div>
 								    <script>
@@ -55,23 +55,23 @@
 						</div>
 					</div>
 				<div class="row">
-					<div class="col-md-12 au">
+					<div class="col-md-12 col-lg-12 au">
 						<h3>NetTrac Offices:</h3>
-						<div class="col-md-3">
+						<div class="col-md-3 col-lg-3">
 							<h4>Head Office Address</h4>
 							<p>NetTrac Communications Inc.<br>
 							163 General Dr.,<br>
 							Kitchener, On.<br>
 							Canada, N2K3S7</p>
 						</div>
-						<div class="col-md-2 extwid">
+						<div class="col-md-2 col-lg-2 extwid">
 							<h4>Mailing Address</h4>
 							<p>NetTrac Communications Inc.<br>
 							P.0. Box 122<br>
 							Waterloo, ON<br>
 							Canada, N2J 3Z9</p>
 						</div>
-						<div class="col-md-3" >
+						<div class="col-md-3 col-lg-3" >
 							<h4>Philippine Office</h4>	
 							<p>NetTrac Communications Inc.<br>
 							Unit 201, SYCA Building,<br> 
@@ -79,7 +79,7 @@
 							Talisay City,<br>
 							Cebu, Philippines 6045</p>
 						</div>
-						<div class="col-md-3" id="ext">
+						<div class="col-md-3 col-lg-3" id="ext">
 							<h4>You can contact us by emailing</h4>
 							<p>Or in North America by calling 1-877-625-5444 <br>
 							Or in Australia by calling +61 2 6181-0700 <br>
@@ -92,10 +92,10 @@
 	</div>
 </div>
 <div class="visible-sm visible-xs">
-	<div class="container" style="padding:30px">
+	<div class="container" style="padding:0px 30px;">
 		<div class="row">
-			<div class="col-sm-12 col-xs-12">
-				<h2>About Us</h2>
+			<div class="col-sm-12 col-xs-12 pl-2">
+				<h2 style="padding-top: 0px !important;">About Us</h2>
 					<p>NetTrac has been designing and hosting web sites and mission critical applications since 1996. We combine technology and service in the right mix allowing customers to customize their solutions while providing them with a highly available hosting environment. Setting the standard on customer service and satisfaction is our corporate goal. Since inception the development of longstanding relationships with all clients, large or small, has always been Job One! </p>
 			</div>
 		</div>

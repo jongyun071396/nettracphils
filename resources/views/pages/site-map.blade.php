@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('body')
-	<div class="container" id="site-map-footer" style="padding:30px">
+	<div class="container" id="site-map-footer" style="padding:17px">
 		<div class="row  mb-1">
 			<div class="col-md-6">
 				<h2>NetTrac Communications Inc. - Site Map</h2>

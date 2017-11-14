@@ -36,3 +36,5 @@ Route::post('remove_cart','cart_controller@remove_cart');
 Route::post('increase_cart','cart_controller@increase_cart');
 //Route::post('decrease_cart','PagesController@decrease_cart');
 Route::get('customer_login','PagesController@customer_login');
+
+Route::get('dropdownheader', 'PagesController@dropdownheader');
