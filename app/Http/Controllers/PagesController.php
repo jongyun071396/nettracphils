@@ -5,6 +5,7 @@ use App\Http\Requests;
 use DB;
 use App\Product;
 use Illuminate\Http\Request;
+use Cart;
 
 
 class PagesController extends Controller
@@ -72,5 +73,32 @@ class PagesController extends Controller
     }
     public function customer_login(){
         return view('pages.customer_login');
+    }
+
+    public function checkout(){
+        $total_items = count(Cart::content());
+        return view('pages.checkout')->with(compact('total_items'));
+    }
+    public function payment_login(Request $request){
+
+        $username = $request->input('username');
+        $password = $request->input('password');
+
+        if (auth()->attempt(['username' => $username, 'password' => $password])) {
+            // Authentication passed...
+            if (auth()->check())
+            {
+                return redirect('checkout');
+            }
+            else
+            {
+                return redirect('customer_login');
+            }
+        }
+    }
+    public function sign_out()
+    {
+        auth()->logout();
+        return redirect('customer_login');
     }
 }

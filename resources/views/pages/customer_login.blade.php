@@ -1,7 +1,22 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 @extends('layouts.app')
+<style type="text/css">
+	 
+    /* Media query for mobile viewport */
+    @media screen and (max-width: 400px) {
+        #paypal-button-container {
+            width: 100%;
+        }
+    }
+    
+    /* Media query for desktop viewport */
+    @media screen and (min-width: 400px) {
+        #paypal-button-container {
+            width: 250px;
+            display: inline-block;
+        }
+    }
+</style>
 @section('body')
 
 	<div class="container" style="padding:50px">
@@ -19,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-md-6" style="border-left: 1px solid #B2B2B2;padding: 5rem;">
-				<form method="POST" action="{{url('login')}}">
+				<form method="POST" action="{{url('payment_login')}}">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<div class="row">
 							<div class="col-md-12">
@@ -30,12 +45,14 @@
 							<div class="col-md-7">
 							Username:
 							<input type="text" name="username" id="username" style="width: 100%;height: 40px">
+							<p class="error"></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-7">
 							Password:
 							<input type="password" name="password" id="password" style="width: 100%;height: 40px">
+							<p class="error"></p>
 							</div>
 						</div>
 						<div class="row" style="padding-top: 10px">
@@ -46,44 +63,7 @@
 					</form>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div id="paypal-button"></div>
-			</div>
-		</div>
 	</div>
-	
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-  <!-- Identify your business so that you can collect the payments. -->
-  <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
-
-  <!-- Specify a Buy Now button. -->
-  <input type="hidden" name="cmd" value="_xclick">
-
-  <!-- Specify details about the item that buyers will purchase. -->
-  <input type="hidden" name="item_name" value="Premium Umbrella">
-  <input type="hidden" name="amount" value="50.00">
-  <input type="hidden" name="currency_code" value="USD">
-
-  <!-- Provide a drop-down menu option field. -->
-  <input type="hidden" name="on0" value="Type">Type of umbrella <br />
-  <select name="os0">
-    <option value="Select Type">-- Select Type --</option>
-    <option value="Standard">Standard</option>
-    <option value="Collapsable">Collapsable</option>
-  </select> <br />
-
-  <!-- Display the payment button. -->
-  <input type="image" name="submit" border="0"
-    src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png"
-    alt="Buy Now">
-
-  <img alt="" border="0" width="1" height="1"
-  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-
-</form>
-
 @endsection
 <script>
   paypal.Button.render({

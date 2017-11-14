@@ -63,7 +63,7 @@
                                 FREE <i class="fa fa-shopping-cart"></i>
                                 Add to cart
                             @else
-                                Php {{$product->price}}/month
+                                Php {{number_format($product->price,2)}}/month
                                 <i class="fa fa-shopping-cart"></i>
                                 Add to cart
                             @endif
@@ -88,11 +88,11 @@
                      <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                         <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button">
-                            Php {{$product->price}}/month
-                            <i class="fa fa-shopping-cart"></i>
-                            Add to cart
-                        </button> </a>
+
+                        <button type="submit" class="btn btn-warning add-to-cart">
+                            Php {{number_format($product->price,2)}}/month
+
+                        
                     </form>
                 </div>
                 @endforeach 
@@ -104,7 +104,7 @@
                 @foreach( $products['hosting'] as $product )
                 <div class="col-md-3 services h">
                     <p class="servicestitle">
-                            {{ $product->title }}
+                        {{ $product->title }}
                     </p>
                     <p>  
                         {{ $product->description }}   
@@ -112,11 +112,9 @@
                      <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                         <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button" style="">
-                            Php {{$product->price}}/month
-                            <i class="fa fa-shopping-cart"></i>
-                            Add to cart
-                        </button></a>
+
+                        <button type="submit" class="btn btn-warning add-to-cart" style="">
+                            Php {{number_format($product->price,2)}}/month
                     </form>
                 </div>
                 @endforeach 
@@ -146,7 +144,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart">
-                            Php {{$product->price}}
+                            Php {{number_format($product->price,2)}}
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -172,7 +170,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -198,7 +196,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart" style="">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>

@@ -2,10 +2,12 @@
 
 namespace App\Http\Requests;
 
-use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 use Auth;
 
-class paypal_checkout extends Request {
+
+class CheckOut extends FormRequest
+{
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -22,7 +24,7 @@ class paypal_checkout extends Request {
      */
     public function rules() {
         $cc_rule = $this->input('payment_method') == 'credit-card' ? 'required' : '';
-
+      
         if (auth::check()) {
             return [
                 'payment_method'            => 'required',

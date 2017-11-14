@@ -1,6 +1,6 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<head>
+ <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+</head>
 @extends('layouts/app')
 @section('footer')
 	<style>
@@ -25,6 +25,21 @@
 		.content{
 			padding:5px;
 		}
+		    /* Media query for mobile viewport */
+	    @media screen and (max-width: 400px) {
+	        #paypal-button-container {
+	            width: 100%;
+	        }
+	    }
+	    
+	    /* Media query for desktop viewport */
+	    @media screen and (min-width: 400px) {
+	        #paypal-button-container {
+	            width: 250px;
+	            display: inline-block;
+	        }
+	    }
+	    
 	</style>
 @endsection
 @section('body')
@@ -136,6 +151,7 @@
 							<h4>Total Amount:</h4> <span style="color:rgb(233, 97, 44);font-size: 20px;font-weight: bold">Php {{Cart::total()}}.00</span>
 						</div>
 					</div>
+					<br/>
 					<div class="row">
 						<div class="col-md-6">
 							<button class="btn btn-primary">Continue Checkout 
@@ -149,18 +165,51 @@
 	</form>
 @endsection
 <script>
-  paypal.Button.render({
-    env: 'production',  // Or 'sandbox'
-    commit: true,       // Show 'Pay Now' button
-    payment: function () {
-      /*
-       * Set up the payment here
-       */
-    },
-    onAuthorize: function (data, actions) {
-      /*
-       * Execute the payment here
-       */
-    }
-  }, '#paypal-button');
+
+    // Render the PayPal button
+
+    paypal.Button.render({
+
+        // Set your environment
+
+        env: 'sandbox', // sandbox | production
+
+        // Specify the style of the button
+
+        style: {
+            label: 'paypal',
+            size:  'medium',    // small | medium | large | responsive
+            shape: 'rect',     // pill | rect
+            color: 'blue',     // gold | blue | silver | black
+            tagline: false    
+        },
+
+        // PayPal Client IDs - replace with your own
+        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+
+        client: {
+            sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+            production: '<insert production client id>'
+        },
+
+        payment: function(data, actions) {
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: '0.01', currency: 'USD' }
+                        }
+                    ]
+                }
+            });
+        },
+
+        onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function() {
+                window.alert('Payment Complete!');
+            });
+        }
+
+    }, '#paypal-button-container');
+
 </script>
