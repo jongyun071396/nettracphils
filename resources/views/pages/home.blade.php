@@ -88,7 +88,7 @@
                                 FREE <i class="fa fa-shopping-cart"></i>
                                 Add to cart
                             @else
-                                Php {{$product->price}}/month
+                                Php {{number_format($product->price,2)}}/month
                                 <i class="fa fa-shopping-cart"></i>
                                 Add to cart
                             @endif
@@ -114,7 +114,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -129,7 +129,7 @@
                 @foreach( $products['hosting'] as $product )
                 <div class="col-md-3 services h">
                     <p class="servicestitle">
-                            {{ $product->title }}
+                        {{ $product->title }}
                     </p>
                     <p>  
                         {{ $product->description }}   
@@ -138,7 +138,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart" style="">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -171,7 +171,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart">
-                            Php {{$product->price}}
+                            Php {{number_format($product->price,2)}}
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -197,7 +197,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>
@@ -223,7 +223,7 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-warning add-to-cart" style="">
-                            Php {{$product->price}}/month
+                            Php {{number_format($product->price,2)}}/month
                             <i class="fa fa-shopping-cart"></i>
                             Add to cart
                         </button>

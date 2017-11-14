@@ -1,7 +1,22 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 @extends('layouts.app')
+<style type="text/css">
+	 
+    /* Media query for mobile viewport */
+    @media screen and (max-width: 400px) {
+        #paypal-button-container {
+            width: 100%;
+        }
+    }
+    
+    /* Media query for desktop viewport */
+    @media screen and (min-width: 400px) {
+        #paypal-button-container {
+            width: 250px;
+            display: inline-block;
+        }
+    }
+</style>
 @section('body')
 
 	<div class="container" style="padding:50px">
@@ -19,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-md-6" style="border-left: 1px solid #B2B2B2;padding: 5rem;">
-				<form method="POST" action="{{url('login')}}">
+				<form method="POST" action="{{url('payment_login')}}">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<div class="row">
 							<div class="col-md-12">
@@ -30,12 +45,14 @@
 							<div class="col-md-7">
 							Username:
 							<input type="text" name="username" id="username" style="width: 100%;height: 40px">
+							<p class="error"></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-7">
 							Password:
 							<input type="password" name="password" id="password" style="width: 100%;height: 40px">
+							<p class="error"></p>
 							</div>
 						</div>
 						<div class="row" style="padding-top: 10px">
@@ -46,26 +63,5 @@
 					</form>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div id="paypal-button"></div>
-			</div>
-		</div>
 	</div>
 @endsection
-<script>
-  paypal.Button.render({
-    env: 'production',  // Or 'sandbox'
-    commit: true,       // Show 'Pay Now' button
-    payment: function () {
-      /*
-       * Set up the payment here
-       */
-    },
-    onAuthorize: function (data, actions) {
-      /*
-       * Execute the payment here
-       */
-    }
-  }, '#paypal-button');
-</script>

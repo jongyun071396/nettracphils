@@ -36,3 +36,11 @@ Route::post('remove_cart','cart_controller@remove_cart');
 Route::post('increase_cart','cart_controller@increase_cart');
 //Route::post('decrease_cart','PagesController@decrease_cart');
 Route::get('customer_login','PagesController@customer_login');
+Route::get('checkout-process', 'Transactions@paypal_checkout_process');
+
+Route::get('checkout','PagesController@checkout');
+Route::post('payment_login','PagesController@payment_login');
+Route::post('payment','Transactions@checkout');
+
+Route::get('sign-out', 'PagesController@sign_out');
+

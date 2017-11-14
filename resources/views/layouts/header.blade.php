@@ -16,7 +16,10 @@
     <link rel="stylesheet" type="text/css" href="{{ url('fa/css/font-awesome.min.css') }}"> {{-- ANIMATE CSS --}}
     <link rel="stylesheet" href="{{ url('css/animate.css') }}"> {{-- STYLESHEET --}}
     <link rel="stylesheet" href="{{ url('css/style.css') }}"> {{-- FULLPAGE CSS--}}
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" /> @yield('custom-css') @yield('map') @yield('footer')
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" /> 
+    @yield('custom-css') 
+    @yield('map') 
+    @yield('footer')
 </head>
 
 <body>
@@ -36,6 +39,7 @@
                     <li class="{{ request()->segment(1) == 'contact-us' ? 'active' : '' }}"><a href="{{ url('contact-us') }}" class="sliding-middle-out">Contact Us</a></li>
                     <li class="{{ request()->segment(1) == 'payroll' ? 'active' : '' }}"><a href="{{ url('payroll') }}" class="sliding-middle-out">Payroll System</a></li>
                     <li class="{{ request()->segment(1) == 'control-panel' ? 'active' : '' }}"><a href="{{ url('control-panel') }}" class="sliding-middle-out">Control Panel</a></li>
+                    <li class="{{ request()->segment(1) == 'sign-out' ? 'active' : '' }}"><a href="{{ url('sign-out') }}" class="sliding-middle-out"><i class="fa fa-sign-out" aria-hidden="true" style="font-size: 15px"></i> LOGOUT</a></li>
                 </ul>
             </div>
         <div class="visible-sm">
