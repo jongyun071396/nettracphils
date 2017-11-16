@@ -83,7 +83,7 @@
                     <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button">
+                        <a class="ghost-button2"><button type="submit" class="btn btn-default add-to-cart ghost-button">
                             @if($product->price == 0)
                                 FREE <i class="fa fa-shopping-cart"></i>
                                 Add to cart
@@ -114,10 +114,10 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <button type="submit" class="btn btn-warning add-to-cart">
+                        <a class="ghost-button2"><button type="submit" class="btn btn-default add-to-cart ghost-button">
                             Php {{number_format($product->price,2)}}/month
-
-                        
+                        </button>
+                        </a>
                     </form>
                 </div>
                 @endforeach 
@@ -138,8 +138,10 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <button type="submit" class="btn btn-warning add-to-cart" style="">
+                         <a class="ghost-button2"><button type="submit" class="btn btn-default add-to-cart ghost-button" style="">
                             Php {{number_format($product->price,2)}}/month
+                        </button>
+                        </a>
                     </form>
                 </div>
                 @endforeach 
