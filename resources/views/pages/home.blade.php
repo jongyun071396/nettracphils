@@ -1,10 +1,10 @@
 @extends('layouts.app') 
 @section('custom-css')
+
 <style>
     nav.navbar {
         background: rgba(0, 0, 0, 0.3);
     }
-    
     #test {
         display: none;
         height: 120px;
@@ -16,8 +16,9 @@
     }
 </style>
 @endsection 
+        {{-- DESKTOP --}}
 @section('body') {{-- hero --}}
-<div class="visible-md visible-lg">
+
     <div id="hero">
         <div class="hero-overlay"></div>
         <div class="container">
@@ -34,35 +35,9 @@
             </div>
         </div>
     </div>
-</div>
-<div class="visible-sm visible-xs">
-    <div id="sm-hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content" style="padding-top: 250px;">
-            <br>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h3>UNLIMITED HOSTING OPTIONS</h3>
-                    </div>
-                    <div class="item">
-                        <h3>GET ALL THE BUSINESS TOOLS YOU NEED</h3>
-                    </div>
-                    <div class="item">
-                        <h3>NEED A WEBSITE?</h3>
-                        <h2>NetTrac is your Lowest Cost Solutions</h2>
-                    </div>
-                </div>
+    
 
-                <!-- Left and right controls -->
-            </div>
-
-        </div>
-
-    </div>
-</div>
+        {{-- DESKTOP  --}}
 <div class="visible-lg visible-md">
     <div class="container" id="home_content section0" style="padding:30px">
         <div class="row" id="types">
@@ -115,9 +90,11 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <a class="ghost-button2"><button type="submit" class="btn btn-default add-to-cart ghost-button">
-                            Php {{number_format($product->price,2)}}/month
+                            Php {{number_format($product->price,2)}}/month <i class="fa fa-shopping-cart"></i>
+                                Add to cart
                         </button>
                         </a>
+
                     </form>
                 </div>
                 @endforeach 
@@ -137,9 +114,9 @@
                      <form method="POST" action="{{url('getCart')}}">
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
                          <a class="ghost-button2"><button type="submit" class="btn btn-default add-to-cart ghost-button" style="">
-                            Php {{number_format($product->price,2)}}/month
+                            Php {{number_format($product->price,2)}}/month <i class="fa fa-shopping-cart"></i>
+                                Add to cart
                         </button>
                         </a>
                     </form>
@@ -240,7 +217,6 @@
     $(document).ready(function() {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         setTimeout(function() {
-            // $('.hero-content').fadeIn().addClass(animationName).one(animationEnd,
             $('#hero-content h2').show().addClass('animated').one(animationEnd, function() {
                 $('#hero-content h1').show().addClass('animated').one(animationEnd, function() {
                     $('#hero-content h3').show().addClass('animated');

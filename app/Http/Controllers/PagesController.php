@@ -88,7 +88,8 @@ class PagesController extends Controller
             // Authentication passed...
             if (auth()->check())
             {
-                return redirect('checkout');
+
+                return redirect('chec   kout');
             }
             else
             {

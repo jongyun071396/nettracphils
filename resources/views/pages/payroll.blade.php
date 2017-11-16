@@ -10,7 +10,7 @@
 	</style>
 @endsection
 @section('body')
-<div class="visible-lg visible-md visible-sm">
+<div class="visible-lg visible-md visible-sm" style="height: 381px;">
 	<div class="container" id="payroll-container">
 		<div class="row">
 			<div class="col-md-12">
