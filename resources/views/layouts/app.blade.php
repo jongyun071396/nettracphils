@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Document</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-=======
     <title>NetTracPhils</title>
->>>>>>> 52bcbd970ec29c503737d58b067ffa370f9331d3
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,6 +19,7 @@
     <link rel="stylesheet" href="{{ url('css/style.css') }}"> {{-- FULLPAGE CSS--}}
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" /> @yield('custom-css') @yield('map') @yield('footer')
     {{-- ReCAPTCHA --}}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
@@ -102,6 +99,7 @@
 </div>
 </footer>
     {{-- BOOTSTRAP --}}
-    {{-- CUSTOM JS --}} @yield('custom-js') {{-- FULLPAGE JS --}}
+    {{-- CUSTOM JS --}} 
+    @yield('custom-js') {{-- FULLPAGE JS --}}
 </body>
 </html>

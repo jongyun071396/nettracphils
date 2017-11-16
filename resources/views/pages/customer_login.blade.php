@@ -19,7 +19,7 @@
 </style>
 @section('body')
 
-	<div class="container" style="padding:50px">
+	<div class="container" style="padding:41px">
 		<div class="row">
 			<div class="col-md-6" style="padding: 5rem">
 				<div class="row">

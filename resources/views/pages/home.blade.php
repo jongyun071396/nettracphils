@@ -37,7 +37,7 @@
     </div>
     
 
-        {{-- MOBILE  --}}
+        {{-- DESKTOP  --}}
 <div class="visible-lg visible-md">
     <div class="container" id="home_content section0" style="padding:30px">
         <div class="row" id="types">
@@ -89,10 +89,10 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <button type="submit" class="btn btn-warning add-to-cart">
+                         <a class="ghost-button2"><button type="submit" class="btn btn-warning add-to-cart ghost-button">
                             Php {{number_format($product->price,2)}}/month
-
-                        
+                            
+                        </button></a>
                     </form>
                 </div>
                 @endforeach 
@@ -113,8 +113,9 @@
                         <input type="hidden" name="product_id" value="{{$product->id}}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <button type="submit" class="btn btn-warning add-to-cart" style="">
+                        <button type="submit" class="btn btn-warning add-to-cart">
                             Php {{number_format($product->price,2)}}/month
+                            </button>
                     </form>
                 </div>
                 @endforeach 
