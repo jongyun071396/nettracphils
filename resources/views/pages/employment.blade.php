@@ -1,4 +1,4 @@
-@extends('.layouts.app')
+@extends('layouts.master')
 @section('body')
 	<div class="container" style="padding:10px">
 		<div class="row">

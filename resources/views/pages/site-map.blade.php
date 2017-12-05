@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('body')
 	<div class="container" id="site-map-footer" style="padding:17px">
 		<div class="row  mb-1">

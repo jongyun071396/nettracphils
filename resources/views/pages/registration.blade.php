@@ -1,7 +1,7 @@
 <head>
  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
-@extends('layouts/app')
+@extends('layouts.master')
 @section('footer')
 	<style>
 		footer {
@@ -139,8 +139,8 @@
 						</div>
 					</div>
 				</div>
-				
-				<div class="col-md-3 col-md-offset-1 box">
+				<br>
+				<div class="col-md-3 col-md-offset-1 box col-sm-col3 mt-5">
 					<div class="row header" style="background-color:#004C70;color:white; ">
 						<div class="col-md-12">
 								Order Summary
@@ -154,14 +154,15 @@
 					<br/>
 					<div class="row">
 						<div class="col-md-6">
-							<button class="btn btn-primary">Continue Checkout 
-							<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+							<button type="submit" name="register" class="btn btn-primary">
+								Continue Checkout <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+							</button>
 						</div>
 					</div>	
 					<br/>
-					</div>
 				</div>
 			</div>
+		</div>
 	</form>
 @endsection
 <script>

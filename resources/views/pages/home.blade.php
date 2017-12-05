@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('layouts.master') 
 @section('custom-css')
 
 <style>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    
+
 
         {{-- DESKTOP  --}}
 <div class="visible-lg visible-md">

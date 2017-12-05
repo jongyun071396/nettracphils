@@ -30,22 +30,6 @@ class cart_controller extends Controller
         
             Cart::add($item);
         }
-        //increment the quantity
-/*        if (Request::get('product_id') && (Request::get('increment')) == 1) {
-            $rowId = Cart::search(array('id' => Request::get('product_id')));
-            $item = Cart::get($rowId[0]);
-
-            Cart::update($rowId[0], $item->qty + 1);
-        }*/
-
-        //decrease the quantity
-/*        
-        if (Request::get('product_id') && (Request::get('decrease')) == 1) {
-            $rowId = Cart::search(array('id' => Request::get('product_id')));
-            $item = Cart::get($rowId[0])->first();
-
-            Cart::update($rowId[0], $item->qty - 1);
-        }*/
 
         $cart = Cart::content();
         return redirect('cart');
@@ -53,6 +37,7 @@ class cart_controller extends Controller
 
     public function cart_view(){
         $items = Cart::content();
+
         return view('pages.cart')->with(compact('items'));
     }
     public function remove_cart(){
@@ -67,5 +52,6 @@ class cart_controller extends Controller
         Cart::update($id, $qty);
         $cart = Cart::content();
         return 'success';
+
     }
 }

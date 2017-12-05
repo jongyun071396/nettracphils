@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 <style type="text/css">
 	#Proceed{
 		background: #2FA46E;
@@ -67,43 +67,28 @@
 					</div>
 					<div class="row">
 						<div class="col-md-3 col-md-offset-9">
-								<p style="font-size: 17px;color:rgb(233, 97, 44);"> Subtotal: Php. {{number_format($item->subtotal,2)}}</p>
+							<p style="font-size: 17px; color:rgb(233, 97, 44);"> Subtotal: Php. {{number_format($item->subtotal,2)}}</p>
 						</div>
 					</div>
-					{{-- MODAL --}}
-					<div class="container">
-						  <!-- Trigger the modal with a button -->
-						  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-						  <!-- Modal -->
-						  <div class="modal fade" id="myModal" role="dialog">
-						    <div class="modal-dialog">
-						    
-						      <!-- Modal content-->
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal">&times;</button>
-						          <h4 class="modal-title">Modal Header</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p>Some text in the modal.</p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div>
-						      
-						    </div>
-						  </div>
-						  
-						</div>
-						{{-- END MODAL --}}
 					<div class="row">
-							<div class="col-md-3 col-md-offset-9">
+						<div class="col-md-3 col-md-offset-6" style="width: 180px;">
+							<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+								{{ csrf_field() }}
+							<!-- Identify your business so that you can collect the payments. -->
+							<input type="hidden" name="business" value="jimkarlperalta7-facilitator@gmail.com">
+							<!-- Specify a Buy Now button. -->
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="item_name" value="">
+							<input type="hidden" name="amount" value="{{$item->subtotal}}">
+							<input type="hidden" name="currency_code" value="PHP">
+							<button name="submit" class="btn btn-primary" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" style="width: 150px;">Buy Now</button>
+							</form>
+						</div>	
+						<div class="col-md-3">
 							<form method="POST" action="remove_cart">
 								<input type="hidden" name="product_id" value="{{$item->id}}">
                         		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-								<button class="btn btn-danger" style="border-radius: 1px"><i class="fa fa-trash" aria-hidden="true"></i> Remove from Cart</button>
+								<button class="btn btn-danger" style="border-radius: 5px;"><i class="fa fa-trash" aria-hidden="true"></i> Remove from Cart</button>
 							</form>
 						</div>
 					</div>
@@ -203,10 +188,23 @@
 					</div>
 					<div class="row">
 						<div class="col-md-3 col-md-offset-9">
-								<p style="font-size: 17px;color:rgb(233, 97, 44);"> Subtotal: Php. {{number_format($item->subtotal,2)}}</p>
+							<p style="font-size: 17px;color:rgb(233, 97, 44);"> Subtotal: Php. {{number_format($item->subtotal,2)}}</p>
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-md-3 col-md-offset-6">
+							<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+								{{ csrf_field() }}
+							<!-- Identify your business so that you can collect the payments. -->
+							<input type="hidden" name="business" value="jimkarlperalta7-facilitator@gmail.com">
+							<!-- Specify a Buy Now button. -->
+							<input type="hidden" name="cmd" value="_xclick">
+							<input type="hidden" name="item_name" value="">
+							<input type="hidden" name="amount" value="{{$item->subtotal}}">
+							<input type="hidden" name="currency_code" value="PHP">
+							<button name="submit" class="btn btn-primary" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now">Buy Now</button>
+							</form>
+						</div>
 						<div class="col-md-3 col-md-offset-9">
 							<form method="POST" action="remove_cart">
 								<input type="hidden" name="product_id" value="{{$item->id}}">
@@ -232,6 +230,7 @@
 						Proceed to Checkout
 					</button>
 				</a>
+
 			</div>
 		</div>
 	</div>
@@ -255,7 +254,7 @@
 				{
 					if( response == 'success')
 					{
-						alert('Price is updated.');
+
 						location.reload();
 						
 					}

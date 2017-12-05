@@ -30,10 +30,7 @@ class Logins extends Migration
             $table->timestamps();
         });
 
-        DB::table('users')->insert([
-                'username' => 'admin',
-                'password' => Hash::make('123456'),
-            ]
+        DB::table('users');
         );
     }
 
